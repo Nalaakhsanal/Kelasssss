@@ -95,8 +95,8 @@ class HomePageState extends State<HomePage> {
           child: new Column(
             children: <Widget>[
               UserAccountsDrawerHeader(
-                accountEmail: new Text("nizarsalis@gmail.com"),
-                accountName: new Text("Salis"),
+                accountEmail: new Text("Nalaakhsanal@gmail.com"),
+                accountName: new Text("Nalaakhsanal"),
                 currentAccountPicture: new GestureDetector(
                   child: new CircleAvatar(
                     backgroundImage: new NetworkImage(currentProfilePic),
