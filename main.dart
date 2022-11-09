@@ -1,7 +1,11 @@
+import 'package:aplikasi3/screens/screen1.dart';
+import 'package:aplikasi3/screens/screen2.dart';
+import 'package:aplikasi3/screens/screen3.dart';
+import 'package:aplikasi3/screens/screen4.dart';
+import 'package:aplikasi3/screens/screen5.dart';
+import 'package:aplikasi3/screens/screen6.dart';
+import 'package:aplikasi3/screens/screen7.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/screen/screen1.dart';
-import 'package:flutter_application_2/screen/screen2.dart';
-import 'package:flutter_application_2/screen/screen3.dart';
 
 void main() => runApp(new MyApp());
 
@@ -29,7 +33,11 @@ class HomePage extends StatefulWidget {
   final drawerItems = [
     new DrawerItem("Menu 1 ", Icons.home),
     new DrawerItem("Menu 2", Icons.article),
-    new DrawerItem("Menu 3", Icons.dashboard)
+    new DrawerItem("Menu 3", Icons.dashboard),
+    new DrawerItem("Menu 4", Icons.dashboard),
+    new DrawerItem("Menu 5", Icons.dashboard),
+    new DrawerItem("Menu 6", Icons.dashboard),
+    new DrawerItem("Menu 7", Icons.dashboard)
   ];
 
   @override
@@ -51,6 +59,14 @@ class HomePageState extends State<HomePage> {
         return new Screen2();
       case 2:
         return new Screen3();
+      case 3:
+        return new Screen4();
+      case 4:
+        return new Screen5();
+      case 5:
+        return new Screen6();
+      case 6:
+        return new Screen7();
 
       default:
         return new Text("Error");
@@ -95,8 +111,8 @@ class HomePageState extends State<HomePage> {
           child: new Column(
             children: <Widget>[
               UserAccountsDrawerHeader(
-                accountEmail: new Text("Nalaakhsanal@gmail.com"),
-                accountName: new Text("Nalaakhsanal"),
+                accountEmail: new Text("Surahman@gmail.com"),
+                accountName: new Text("Surahman"),
                 currentAccountPicture: new GestureDetector(
                   child: new CircleAvatar(
                     backgroundImage: new NetworkImage(currentProfilePic),
